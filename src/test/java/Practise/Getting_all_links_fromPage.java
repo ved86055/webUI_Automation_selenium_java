@@ -1,4 +1,4 @@
-package Dropdowns.Auto_Suggestive_dropdowns;
+package Practise;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class ex
+public class Getting_all_links_fromPage
 {
     @Test
     public void handle_autosugestive_dropdown() throws InterruptedException {
@@ -23,36 +23,16 @@ public class ex
 
         Thread.sleep(2000);
 
-       List<WebElement>options=driver.findElements(By.xpath("//li[@class='ui-menu-item']/a"));
+        List<WebElement> options=driver.findElements(By.xpath("//li[@class='ui-menu-item']/a"));
 
-       Thread.sleep(3000);
+        Thread.sleep(3000);
+
         for (WebElement option:options)
         {
-            if (option.getText().equalsIgnoreCase("Colombia"))
-            {
-                Thread.sleep(3000);
-                option.click();
-                break;}
+            System.out.println(option);
+            System.out.println(options.size());
         }
 
 
 
-
-       /* for (WebElement option:options)
-        {
-            String act=option.getText();
-            String exp="colombia";
-            if (act.equals(exp))
-            {
-                Thread.sleep(3000);
-                option.click();
-                break;}
-        }
-
-
-        */
-
-
-
-    }
-}
+    }}
