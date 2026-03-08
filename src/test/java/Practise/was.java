@@ -1,4 +1,4 @@
-package POP_UPS.Alert_popUP;
+package Practise;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class example1
+public class was
 {
     @Test
     void handleAlertpopUp()
@@ -24,13 +24,12 @@ public class example1
 
         driver.findElement(By.id("alertbtn")).click();
 
-        driver.switchTo().alert().getText();
+        System.out.println(driver.switchTo().alert().getText());
         driver.switchTo().alert().accept();
 
         driver.findElement(By.id("confirmbtn")).click();
 
-        driver.switchTo().alert().getText();
+        System.out.println(driver.switchTo().alert().getText());
 
         driver.switchTo().alert().dismiss();
-    }
-}
+}}
