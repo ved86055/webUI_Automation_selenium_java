@@ -35,9 +35,6 @@ public class ex
                 break;}
         }
 
-
-
-
        /* for (WebElement option:options)
         {
             String act=option.getText();
