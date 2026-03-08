@@ -20,7 +20,7 @@ public class Current_data_only
 
         driver.findElement(By.xpath("//div[@data-testid='departure-date-dropdown-label-test-id']")).click();
 
-     driver.findElement(By.xpath("//div[@data-testid='one-way-radio-button']")).click();
+        driver.findElement(By.xpath("//div[@data-testid='one-way-radio-button']")).click();
 
 
 
