@@ -7,16 +7,15 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class endToEnd
-{
+public class endToEnd {
     @Test
     public void testSpicejetUI() throws InterruptedException {
-        WebDriver driver=new ChromeDriver();
+        WebDriver driver = new ChromeDriver();
         driver.get("https://www.spicejet.com/");
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
 
-         //One Way
+        //One Way
         driver.findElement(By.xpath("//div[@data-testid='one-way-radio-button']")).click();
         Thread.sleep(3000);
 
@@ -51,8 +50,7 @@ public class endToEnd
         Thread.sleep(1000);
 
         //add increase count
-        for (int i=1;i<5;i++)
-        {
+        for (int i = 1; i < 5; i++) {
             driver.findElement(By.xpath("//div[@data-testid='Adult-testID-plus-one-cta']")).click();
         }
 
@@ -63,14 +61,9 @@ public class endToEnd
         driver.findElement(By.xpath("//div[text()='INR']")).click();
 
 
-
         //search
 
         driver.findElement(By.xpath("//div[@data-testid='home-page-flight-cta']")).click();
-
-
-
-
 
 
     }
