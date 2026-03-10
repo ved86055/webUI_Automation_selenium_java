@@ -53,6 +53,10 @@ public class implicitExplicitExample
 
         driver.findElement(By.xpath("//button[text()='Apply']")).click();
 
+        /*
+        WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(5));
+        w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo"))); */
+
         WebDriverWait w=new WebDriverWait(driver,Duration.ofSeconds(5));
         w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("span.promoInfo")));
 
