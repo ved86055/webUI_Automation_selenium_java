@@ -1,4 +1,4 @@
-package ActionClass;
+package Window_Frame;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Hold_release_DnD_usingID
+public class frameHandling_usingID
 {
     @Test
     public void Hold_Release_Alternative_ofDD_useOf_ID_in_iframe()
