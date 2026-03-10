@@ -21,6 +21,14 @@ public class window_handling
 
         driver.findElement(By.xpath("//a[@href='https://rahulshettyacademy.com/documents-request']")).click();
 
+        //Window handling can be done using Arraylist also
+        /*
+          Set<String> windowid=  driver.getWindowHandles();
+          ArrayList<String> ar=new ArrayList<String>(ids);
+          String PId=  ar.get(0);
+          String chId=  ar.get(1);
+        driver.switchTo().window(chId);
+        */
 
         //Window handling
         Set<String> windowid=  driver.getWindowHandles();
@@ -30,7 +38,7 @@ public class window_handling
 
      driver.switchTo().window(childid);
 
-     //child window
+     //child window : this and below this is duplicate line for understanding in 1 line only after get text can perform
 
         System.out.println(driver.findElement(By.cssSelector(".im-para.red")).getText());
 
