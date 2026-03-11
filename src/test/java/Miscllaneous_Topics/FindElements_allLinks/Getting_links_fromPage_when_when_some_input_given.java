@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import java.time.Duration;
 import java.util.List;
 
-public class Getting_all_links_fromPage
+public class Getting_links_fromPage_when_when_some_input_given
 {
     @Test
     public void handle_autosugestive_dropdown() throws InterruptedException {
