@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -24,11 +25,11 @@ public class window_handling
         //Window handling can be done using Arraylist also
         /*
           Set<String> windowid=  driver.getWindowHandles();
-          ArrayList<String> ar=new ArrayList<String>(ids);
+          ArrayList<String> ar=new ArrayList<String>(windowid);
           String PId=  ar.get(0);
           String chId=  ar.get(1);
-        driver.switchTo().window(chId);
-        */
+        driver.switchTo().window(chId); */
+
 
         //Window handling
         Set<String> windowid=  driver.getWindowHandles();
