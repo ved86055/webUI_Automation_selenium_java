@@ -57,8 +57,8 @@ public class Example1
            {
 
            }
-
         }
+        System.out.println("Total broken links are: " + countofBrokenLinks);
 
     }
 }
