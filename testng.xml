@@ -1,0 +1,19 @@
+<suite name="Smoke test cases">
+    <test name="test all smoke">
+        <groups>
+            <run>
+                <include name="smoke"/>
+
+            </run>
+
+        </groups>
+        <classes>
+
+            <class name="Practise.TestNg.HomeLoan"/>
+            <class name="Practise.TestNg.CarLoan"/>
+        </classes>
+
+    </test>
+
+
+</suite>
