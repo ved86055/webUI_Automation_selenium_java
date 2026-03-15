@@ -1,16 +1,10 @@
-<suite name="Smoke test cases">
-    <test name="test all smoke">
-        <groups>
-            <run>
-                <include name="smoke"/>
-
-            </run>
-
-        </groups>
+<suite name="ItestListener">
+    <listeners>
+        <listener class-name="Listeners.liste"/>
+    </listeners>
+    <test name="Screenshot on pass">
         <classes>
-
-            <class name="Practise.TestNg.HomeLoan"/>
-            <class name="Practise.TestNg.CarLoan"/>
+            <class name="Listeners.example_for_listeners"/>
         </classes>
 
     </test>
