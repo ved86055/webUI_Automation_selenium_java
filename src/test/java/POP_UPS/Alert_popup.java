@@ -1,4 +1,4 @@
-package POP_UPS.Alert_popUP;
+package POP_UPS;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class example1
+public class Alert_popup
 {
     @Test
     void handleAlertpopUp()
