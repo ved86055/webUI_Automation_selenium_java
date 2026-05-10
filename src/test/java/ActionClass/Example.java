@@ -19,10 +19,12 @@ public class Example
         WebDriver driver=new ChromeDriver();
         driver.get("https://www.amazon.com/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         Actions act=new Actions(driver) ;
         WebElement element=driver.findElement(By.id("nav-link-accountList"));
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         act.moveToElement(driver.findElement(By.id("twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("hey now").doubleClick().build().perform();
         //move to element

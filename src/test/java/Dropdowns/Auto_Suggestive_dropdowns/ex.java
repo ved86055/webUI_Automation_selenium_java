@@ -23,7 +23,7 @@ public class ex
 
         Thread.sleep(2000);
 
-       List<WebElement>options=driver.findElements(By.xpath("//li[@class='ui-menu-item']/a"));
+       List<WebElement>options=driver.findElements(By.xpath("//li[@class='ui-menu-item']"));
 
        Thread.sleep(3000);
         for (WebElement option:options)

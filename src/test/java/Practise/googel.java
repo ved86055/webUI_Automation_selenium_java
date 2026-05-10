@@ -28,7 +28,7 @@ public class googel
         Thread.sleep(2000);
 
 
-        List<WebElement> options = driver.findElements(By.xpath("//ul[@role='listbox']//li//div[@role='option']"));
+        List<WebElement> options = driver.findElements(By.xpath("//ul[@role='listbox']//li"));
         for (WebElement option : options) {
             if (option.getText().equalsIgnoreCase("selenium rich foods")) {
                 Thread.sleep(3000);
